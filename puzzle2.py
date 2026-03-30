@@ -18,4 +18,4 @@ for key in d:
 
 res= [re.sub(r'\d+', '', i) for i in d] 
 
-print(d + res)
+print(res)
