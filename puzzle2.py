@@ -16,6 +16,6 @@ for key in d:
     if key != '!':
         d = [re.sub(r'[^\w\s]','',item) for item in d]
 
-        
+res= [re.sub(r'\d+', '', i) for i in d] 
 
-print(d)
+print(d + res)
