@@ -9,7 +9,7 @@ d = [
     "12345",
     "!De!eD!",
     "Python123",
-    "!M!a!d!a!m!"
+    "!M!a!d!a!m!",
 ]
 
 for key in d:
@@ -17,10 +17,7 @@ for key in d:
 
 res= [re.sub(r'\d+', '', i) for i in d] 
 
-def palindrome(x):
-    return x==x[::-1]
+def isPalindrome(s):
+    return s == s[::-1]
 
-print(res)
-
-test = palindrome("asdfs")
-print(test)
+print(isPalindrome("racedcar"))
