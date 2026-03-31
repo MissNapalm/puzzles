@@ -13,9 +13,14 @@ d = [
 ]
 
 for key in d:
-    if key != '!':
-        d = [re.sub(r'[^\w\s]','',item) for item in d]
+    d = [re.sub(r'[^\w\s]','',item) for item in d]
 
 res= [re.sub(r'\d+', '', i) for i in d] 
 
+def palindrome(x):
+    return x==x[::-1]
+
 print(res)
+
+test = palindrome("asdfs")
+print(test)
