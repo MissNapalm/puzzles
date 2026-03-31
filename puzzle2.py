@@ -2,7 +2,7 @@ import re
 import string
 
 d = [
-    "12Race!car21",
+    "12Race!caR21",
     "!99An!na",
     "Banana",
     "!Rada!r!",
@@ -20,4 +20,6 @@ res= [re.sub(r'\d+', '', i) for i in d]
 def isPalindrome(s):
     return s == s[::-1]
 
-print(isPalindrome("racedcar"))
+item = isPalindrome(res[6])
+
+print(item)
